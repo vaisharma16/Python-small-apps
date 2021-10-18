@@ -1,0 +1,23 @@
+--
+-- Table structure for table `details`
+--
+
+CREATE TABLE IF NOT EXISTS `details` (
+  `RegistrationNumber` varchar(20) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `address` varchar(60) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `mobileno` bigint(10) NOT NULL,
+  `landlineno` bigint(10) NOT NULL,
+  `dob` date NOT NULL,
+  `startdate` date NOT NULL,
+  `enddate` date NOT NULL,
+  `gender` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `details`
+--
+
+INSERT INTO `details` (`RegistrationNumber`, `name`, `address`, `email`, `mobileno`, `landlineno`, `dob`, `startdate`, `enddate`, `gender`) VALUES
+('abc123', 'abc def', 'Mumbai', 'abcdef@gmail.com', 1234567891, 12345671, '2019-10-10', '2019-11-10', '2019-11-10', 'Male');
